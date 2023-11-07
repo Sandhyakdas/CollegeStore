@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="form" method="POST">
+    {% csrf_token %}
+     <label>NAME</label>
+    <input type="text"  name="NAME" placeholder="Enter name"><br><br>
+     <label>DOB</label>
+    <input type="text"  name="DOB" placeholder="Enter date of birth"><br><br>
+     <label>Gender</label><br>
+   <label for="male">Male</label>
+    <input type="radio" name="gender" id="male" value="male" checked>
+    <label for="female">Female</label>
+   <input type="radio" name="gender" id="female" value="female"><br><br>
+    <label for="phone">Phone number</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+        <label for="email">Email</label>
+        <input type="text"  name="email" placeholder="Enter email"><br><br>
+
+  <label>Department</label>
+  <select id="dept" name="dept">
+    <option value="volvo">computer science</option>
+    <option value="saab">Commerce</option>
+    <option value="fiat">Arts and Science</option>
+    <option value="audi">Forensic Science</option>
+    <option value="audi">Architecture
+    </option>
+
+  </select><br><br>
+
+<label>Courses</label>
+  <select id="Courses" name="Courses">
+    <option value="volvo">A</option>
+    <option value="saab">B</option>
+    <option value="fiat">C</option>
+    <option value="audi">D</option>
+    <option value="audi">E</option>
+
+  </select><br><br>
+
+    <label>Purpose</label>
+  <select id="Purpose" name="Purpose">
+    <option value="volvo">Enquiry</option>
+    <option value="saab">Place Order</option>
+    <option value="fiat">Return</option>
+
+  </select><br><br>
+
+    <label>Materials provide </label><br><br>
+
+    <input type="checkbox" id="Material1" name="Material1" value="Book">
+  <label> debit Note Book</label><br>
+  <input type="checkbox" id="Material2" name="Material2" value="pen">
+  <label> Pen</label><br>
+  <input type="checkbox" id="Material3" name="Material3" value="papers">
+  <label> exam papers</label><br><br>
+
+
+    <button type="button">Submit</button><br><br>
+
+        <button type="button">logout</button><br><br>
+
+        <a href="url">Go back to Home</a>
+
+
+
+</form>
+</body>
+</html>

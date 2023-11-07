@@ -1,0 +1,20 @@
+.nav-item{
+  letter-spacing:.2em;
+  font-size:14px;
+  text-transform:uppercase;
+}
+
+.dropdown-item{
+  letter-spacing:.2em;
+  font-size:14px;
+  text-transform:uppercase;
+}
+.my_footer{
+position: fixed;
+   position:absolute;
+   width: 100%;
+   padding:50px;
+   background: black;
+   color: white;
+   text-align: center;
+}
